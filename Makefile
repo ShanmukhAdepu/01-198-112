@@ -17,12 +17,12 @@ JFLAGS = -d $(OUTDIR)
 RM = rm
 
 all:
-	$(JAVAC) $(JFLAGS) $(SRCDIR)/poly/*.java
+	$(JAVAC) $(JFLAGS) $(SRCDIR)/trie/*.java
 
 run:
-	$(JAVA) -cp $(OUTDIR) poly.Polytest
+	$(JAVA) -cp $(OUTDIR)/trie TrieApp
 
 # To start over from scratch, type 'make clean'.
 # Removes all .class files, so that the next make rebuilds them
 clean:
-	$(RM) $(OUTDIR)/poly/*.class
+	$(RM) $(OUTDIR)/trie/*.class
